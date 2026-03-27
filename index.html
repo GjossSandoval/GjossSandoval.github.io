@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | José García</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <nav>
+        <h1><span class="logo-bracket">&lt;</span>Dev<span class="logo-bracket">/&gt;</span></h1>
+        <ul class="nav-links">
+            <li><a href="#inicio" class="active">Inicio</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section id="inicio" class="hero-section">
+        <div class="hero-background">
+            <div class="code-grid-bg"></div>
+            <div class="floating-particles" id="particles"></div>
+        </div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-greeting">
+                    <span class="greeting-text">Hola, soy</span>
+                </div>
+                
+                <h1 class="hero-name" id="heroName">
+                    <span class="name-prefix">const</span>
+                    <span class="name-operator">=</span>
+                    <span class="name-value">José García</span><span class="name-cursor">|</span>
+                    <span class="name-suffix">;</span>
+                </h1>
+                
+                <div class="hero-title">
+                    <span class="title-prefix">//</span>
+                    <span class="title-text">Desarrollador Web & UI/UX</span>
+                </div>
+                
+                <p class="hero-description">
+                    Desarrollador especializado en crear experiencias digitales rápidas, responsivas y centradas en el usuario.
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="#proyectos" class="btn btn-primary">
+                        Ver mis trabajos <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-image-wrapper">
+                <div class="hero-image-container">
+                    <div class="profile-image-glow"></div>
+                    <div class="profile-image-frame">
+                        <div class="profile-image">
+                            <div class="profile-placeholder">
+                                <i class="fas fa-user-astronaut"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="floating-badge badge-1">
+                        <i class="fab fa-react"></i>
+                        <div class="badge-content">
+                            <span class="badge-title">Frontend</span>
+                        </div>
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <i class="fab fa-node-js"></i>
+                        <div class="badge-content">
+                            <span class="badge-title">Backend</span>
+                        </div>
+                    </div>
+                    <div class="floating-badge badge-3">
+                        <i class="fab fa-js"></i>
+                        <div class="badge-content">
+                            <span class="badge-title">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos">
+        <h2 class="section-title">Mis Proyectos</h2>
+        <div class="grid-proyectos">
+            <div class="tarjeta-proyecto" data-aos="fade-up">
+                <div class="imagen-proyecto">
+                    <img src="img/puntoventa.png"  alt="E-commerce Minimalista">
+                </div>
+                <div class="info-proyecto">
+                    <h3>E-commerce Minimalista</h3>
+                    <p>Un punto de venta completamente funcional con carrito de compras y panel de administración y visualizacion de datos.</p>
+                    <span class="tecnologias">React | Pandas | Excel</span>
+                    <div class="enlaces-proyecto">
+                        <a href="https://github.com/Jose1-78/POS_CHUY-S.git" target="_blank" rel="noopener noreferrer">Ver Código</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta-proyecto" data-aos="fade-up" data-aos-delay="100">
+                <div class="imagen-proyecto">
+                    <img src="img/programadoresjava.png" alt="PJMX">
+                </div>
+                <div class="info-proyecto">
+                    <h3>Página web de Empresa PJMX</h3>
+                    <p>Aplicación web para la presentación y promoción de los servicios de la empresa.</p>
+                    <span class="tecnologias">JavaScript | HTML5 | CSS3</span>
+                    <div class="enlaces-proyecto">
+                        <a href="https://programadoresjava.mx/" target="_blank" rel="noopener noreferrer">Ver Sitio en Vivo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta-proyecto" data-aos="fade-up" data-aos-delay="200">
+                <div class="imagen-proyecto">
+                    <img src="img/suncore.png" alt="Suncore">
+                </div>
+                <div class="info-proyecto">
+                    <h3>Dashboard Financiero</h3>
+                    <p>Página web que da a conocer la información de contacto de la empresa.</p>
+                    <span class="tecnologias">Vue.js | Chart.js | Tailwind CSS</span>
+                    <div class="enlaces-proyecto">
+                        <a href="https://suncore.com.mx/" target="_blank" rel="noopener noreferrer">Ver Sitio en Vivo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cv">
+        <p> Estos son solo algunos ejemplos de mi trabajo <br>
+            asi que si quieres ver más, no dudes en contactarme.</p>
+                <a href="https://drive.google.com/file/d/1nTwAUY9QW1Bets2E6k5ZbSlXDyLHk_yQ/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Ver mi CV</a>
+
+    </section>
+    <section id="contacto">
+        <h2 class="section-title">¿Listo para trabajar juntos?</h2>
+
+            <p class="contacto-descripcion">Actualmente estoy disponible para nuevos proyectos.</p>
+                <div class="botones-contacto">
+                    <a href="https://wa.me/525531043116?text=Hola%20%2C%20Jos%C3%A9%20Garcia.%20Me%20interesa%20desarrollar%20un%20proyecto%20de%20TI" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+                         <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 José García. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 800, once: false });</script>
+</body>
+</html>
